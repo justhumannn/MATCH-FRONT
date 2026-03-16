@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import MainDashboard from '../components/MainDashboard.vue';
 import BettingDetail from '../components/BettingDetail.vue';
+import BettingSave from '../components/BettingSave.vue';
 
 const routes = [
   {
@@ -13,6 +14,11 @@ const routes = [
     path: '/betting/:id',
     name: 'BettingDetail',
     component: BettingDetail
+  },
+  {
+    path: '/betting/save',
+    name: 'BettingSave',
+    component: BettingSave
   }
 ];
 
